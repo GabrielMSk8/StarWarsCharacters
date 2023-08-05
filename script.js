@@ -105,7 +105,7 @@ async function loadNextPage(){
   if(!currentPageUrl) return;
 
   try{
-  alert("entrei aqui")
+  
 
     const response = await fetch(currentPageUrl)
     const responseJson = await response.json()
@@ -131,7 +131,7 @@ async function loadPreviousPage() {
 
   }catch(error){
    console.log(error)
-   alert("Erro ao carregara a página anterior")
+   alert("Erro ao carregar a página anterior")
   }
 }
 
